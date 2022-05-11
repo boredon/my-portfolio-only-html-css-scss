@@ -1,0 +1,854 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1440px;
+}
+
+/* header */
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 15px;
+  background: #060606;
+  height: 90px;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* justify-content: center; */
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.center_ul {
+  width: 80%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.center_ul > li:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.center_elements > li:nth-child(2) {
+  margin-left: 100px;
+}
+
+.center_ul > li > div {
+  margin-left: 20px;
+}
+
+/* nav ul>li:nth-child(1n+3){
+    margin-left: auto;
+} */
+/* nav ul>li:nth-child(1n+4){
+    margin-left: 15px;
+} */
+.center_elements a {
+  font-family: 'B612 Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 29px;
+  color: #FFFFFF;
+  text-shadow: 6px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.circle-reposit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 47px;
+  height: 47px;
+  border: 1px solid black;
+  border-radius: 60px;
+  background: #FFFFFF;
+}
+
+.circle-reposit a i {
+  font-size: 24px;
+}
+
+.circle-reposit a {
+  color: black;
+}
+
+.three_out {
+  margin-right: 0;
+}
+
+.logo {
+  position: absolute;
+  top: -10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 140px;
+  background: url(../img/reallogo.jpeg) center;
+  z-index: 1;
+}
+
+.relative {
+  position: relative;
+  left: 50px;
+  top: 70px;
+  width: 120px;
+  height: 150px;
+}
+
+.nickname {
+  position: absolute;
+  left: 20px;
+  top: 115px;
+}
+
+.nickname p {
+  font-family: 'B612 Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #000000;
+  text-shadow: 6px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* main */
+.adaptive {
+  display: none;
+}
+
+.main_introduction {
+  width: 100%;
+  position: relative;
+  height: 700px;
+}
+
+.main_introduction .background_main {
+  position: relative;
+  padding-left: 30px;
+  padding-top: 100px;
+}
+
+.main_introduction .background_main .background {
+  width: 59.6%;
+}
+
+.main_introduction .background_main .hello {
+  width: 96px;
+  height: 47px;
+  font-family: 'K2D';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 47px;
+  color: #000000;
+}
+
+.main_introduction .background_main .other-txt {
+  width: 329px;
+  height: 206px;
+  font-family: 'K2D';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 47px;
+  color: #000000;
+}
+
+.main_introduction .background_main .txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  margin-right: 75px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main_introduction .background_main .txt .arrow-back {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main_introduction .background_main .arrow {
+  width: 20%;
+  height: 35%;
+}
+
+.main_introduction .me_door {
+  position: absolute;
+  top: 276px;
+  left: 185px;
+  width: 13%;
+  height: 34%;
+}
+
+.main_introduction .me_outdoor {
+  position: absolute;
+  top: 300px;
+  left: 450px;
+  width: 17%;
+  height: 47%;
+}
+
+.main_introduction .meiswalking {
+  position: absolute;
+  top: 290px;
+  left: 300px;
+  width: 15%;
+  height: 45%;
+}
+
+main .about_me {
+  width: 372px;
+  height: 219px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .about_me img {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  height: 150px;
+}
+
+main .about_me p {
+  font-family: 'B612 Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 44px;
+}
+
+main .about-me_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  height: 60%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(26, 3, 164, 0.2)), to(rgba(26, 3, 164, 0.2))), rgba(196, 196, 196, 0.5);
+  background: linear-gradient(0deg, rgba(26, 3, 164, 0.2), rgba(26, 3, 164, 0.2)), rgba(196, 196, 196, 0.5);
+  -webkit-box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.25);
+}
+
+main .about-me_text p {
+  padding-top: 39px;
+  padding-left: 42px;
+  padding-right: 110px;
+  padding-bottom: 337px;
+  font-family: 'B612 Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 44px;
+  color: #000000;
+}
+
+main .secondpage {
+  width: 100%;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .allmyworks {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 700px;
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+main .allmyworks .title_myworks {
+  width: 189px;
+  height: 53px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'K2D';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 52px;
+  color: #000000;
+}
+
+main .allmyworks .cmon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 800px;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+main .allmyworks .cmon .therealone {
+  width: 26%;
+  height: 47.1%;
+  border-radius: 41px;
+  background: url(../img/proj.png) center;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+main .allmyworks .cmon .projects {
+  background: #B0B0B0;
+  border-radius: 41px;
+  width: 26%;
+  height: 47.1%;
+  margin-bottom: 65px;
+}
+
+main .allmyworks .underproj {
+  width: 30%;
+  height: 36%;
+  position: absolute;
+  z-index: -1;
+  top: 30px;
+  left: -45px;
+}
+
+main .allmyworks .birds {
+  position: absolute;
+  width: 35%;
+  height: 41%;
+  z-index: -1;
+  right: -100px;
+  top: -80px;
+}
+
+@media (max-width: 1288px) {
+  #hello, #other-txt {
+    font-size: 20px;
+  }
+  #background {
+    width: 50%;
+  }
+  #me_door {
+    left: 145px;
+    top: 228px;
+    width: 10%;
+    height: 33%;
+  }
+  #meiswalking {
+    top: 237px;
+    left: 220px;
+    width: 120px;
+    height: 210px;
+  }
+  #me_outdoor {
+    top: 247px;
+    left: 380px;
+    width: 13%;
+    height: 45%;
+  }
+  #other-txt {
+    height: 131px;
+  }
+  #arrow {
+    width: 13%;
+    height: 28%;
+  }
+  #about_me p {
+    font-size: 19px;
+  }
+  #about-me_text {
+    width: 40%;
+    height: 28%;
+  }
+  #about-me_text p {
+    font-size: 19px;
+  }
+  #title_myworks {
+    font-size: 21px;
+  }
+  #projects, #therealone {
+    width: 26%;
+    height: 38.7%;
+  }
+  #therealone {
+    background: url(../img/proj.png) center;
+  }
+  #content a, #nickname > p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1047px) {
+  #background {
+    width: 40%;
+  }
+  #me_door {
+    left: 95px;
+    top: 152px;
+    width: 10%;
+    height: 38%;
+  }
+  #meiswalking {
+    top: 167px;
+    left: 153px;
+    width: 11%;
+    height: 45%;
+  }
+  #me_outdoor {
+    top: 168px;
+    left: 250px;
+    width: 13%;
+    height: 48%;
+  }
+  #other-txt {
+    height: 111px;
+  }
+  #arrow {
+    width: 8%;
+    height: 24%;
+  }
+  #main_introduсtion, #aboutme {
+    height: 400px;
+  }
+  #about-me_text {
+    height: 65%;
+  }
+  #underproj {
+    top: 45px;
+    left: -35px;
+    width: 30%;
+    height: 35%;
+  }
+  #birds {
+    top: -60px;
+    width: 30%;
+    height: 36%;
+  }
+  #foot .contact, #foot .copyright {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 997px) {
+  #birds {
+    right: 5px;
+    top: 0px;
+    width: 20%;
+    height: 16%;
+  }
+}
+
+@media (max-width: 879px) {
+  #circle-reposit {
+    width: 30px;
+    height: 30px;
+  }
+  #circle-reposit #i {
+    font-size: 15px;
+  }
+  #content {
+    display: none;
+  }
+  #logo {
+    left: -30px;
+    top: -40px;
+    background: url(../img/70.jpg) center;
+    width: 70px;
+    height: 70px;
+  }
+  #nickname {
+    top: 90px;
+  }
+  #nickname p {
+    font-size: 12px;
+  }
+  #main_introduсtion, #aboutme {
+    height: 350px;
+  }
+  #background {
+    width: 30%;
+  }
+  #hello, #other-txt {
+    font-size: 16px;
+  }
+  #arrow {
+    width: 8%;
+    height: 20%;
+  }
+  #me_door {
+    left: 80px;
+    top: 159px;
+    width: 5%;
+    height: 22%;
+  }
+  #meiswalking {
+    top: 163px;
+    left: 113px;
+    width: 6%;
+    height: 30%;
+  }
+  #me_outdoor {
+    top: 161.5px;
+    left: 160px;
+    width: 7%;
+    height: 33%;
+  }
+  #about_me img {
+    width: 20%;
+    height: 20%;
+  }
+  #about_me p {
+    font-size: 15px;
+  }
+  #about-me_text p {
+    font-size: 15px;
+  }
+  #birds {
+    right: -55px;
+    top: -9px;
+    width: 35%;
+    height: 16%;
+  }
+  #projects, #therealone {
+    width: 200px;
+    height: 200px;
+  }
+  #myworks {
+    margin: 0 auto;
+    width: 500px;
+    height: 873px;
+  }
+  #therealone {
+    background: url(../img/smallerproj.png) center;
+  }
+  #underproj {
+    top: 45px;
+    left: -35px;
+    width: 50%;
+    height: 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  #txt {
+    width: 334px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .adaptive_first, .adaptive_second {
+    display: none;
+  }
+  #adaptive {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 280px;
+    margin-left: 25px;
+  }
+  #arrow-back {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  #arrow {
+    width: 35px;
+  }
+  #about_me p, #about-me_text p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 370px) {
+  #main_introduсtion {
+    height: 800px;
+  }
+  #aboutme {
+    height: 500px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #about_me p {
+    font-size: 18px;
+  }
+  #about_me img {
+    width: 60%;
+    height: 60%;
+  }
+  #txt {
+    width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .adaptive_first, .adaptive_second {
+    display: block;
+  }
+  #adaptive {
+    display: none;
+  }
+  #other-txt {
+    height: auto;
+    width: auto;
+  }
+  #arrow-back {
+    width: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+  }
+  #background {
+    width: 100%;
+  }
+  #hello, #other-txt {
+    font-size: 16px;
+  }
+  #arrow {
+    width: 30%;
+  }
+  #me_door {
+    left: 93px;
+    top: 185px;
+    width: 16%;
+    height: 22%;
+  }
+  #meiswalking {
+    top: 196px;
+    left: 139px;
+    width: 19%;
+    height: 28%;
+  }
+  #me_outdoor {
+    top: 193px;
+    left: 200px;
+    width: 22%;
+    height: 33%;
+  }
+  #content li a {
+    font-size: 12px;
+  }
+  #myworks {
+    margin: 0 auto;
+    width: 200px;
+    height: 2161px;
+  }
+  #logo {
+    top: -40px;
+  }
+  #nickname {
+    display: none;
+    left: -20px;
+    top: 17px;
+  }
+  #nickname p {
+    color: white;
+    font-size: 13px;
+  }
+  #birds {
+    display: none;
+  }
+  #about-me_text {
+    width: 100%;
+    height: 50%;
+  }
+  #about-me_text p {
+    font-size: 12px;
+    width: auto;
+    height: auto;
+  }
+  #about_me p {
+    font-size: 12px;
+  }
+  #underproj {
+    top: 690px;
+    left: -40px;
+    width: 250px;
+    height: 250px;
+  }
+  #projects, #therealone {
+    margin: 0px;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* footer */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  min-height: 100px;
+}
+
+footer .foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .contact {
+  width: 337px;
+  height: 50px;
+  font-family: 'K2D';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+footer .contact a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+footer .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 71px;
+  height: 26px;
+  font-family: 'K2D';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
